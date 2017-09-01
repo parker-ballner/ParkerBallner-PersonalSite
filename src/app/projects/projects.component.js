@@ -14,7 +14,7 @@ var ProjectsComponent = (function () {
 ProjectsComponent = __decorate([
     core_1.Component({
         selector: 'projects',
-        templateUrl: './projects.components.html'
+        templateUrl: './projects.component.html'
     })
 ], ProjectsComponent);
 exports.ProjectsComponent = ProjectsComponent;

@@ -11,6 +11,8 @@ var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
 var aboutMe_component_1 = require("./aboutMe/aboutMe.component");
 var workExperience_component_1 = require("./workExperience/workExperience.component");
+var projects_component_1 = require("./projects/projects.component");
+var contact_component_1 = require("./contact/contact.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -33,10 +35,18 @@ AppModule = __decorate([
                 {
                     path: 'workexperience',
                     component: workExperience_component_1.WorkExperienceComponent
+                },
+                {
+                    path: 'projects',
+                    component: projects_component_1.ProjectsComponent
+                },
+                {
+                    path: 'contact',
+                    component: contact_component_1.ContactComponent
                 }
             ])
         ],
-        declarations: [app_component_1.AppComponent, aboutMe_component_1.AboutMeComponent, workExperience_component_1.WorkExperienceComponent],
+        declarations: [app_component_1.AppComponent, aboutMe_component_1.AboutMeComponent, workExperience_component_1.WorkExperienceComponent, projects_component_1.ProjectsComponent, contact_component_1.ContactComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
