@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent }  from './app.component';
-import { AboutMeComponent } from './aboutMe/aboutMe.component';
-import { WorkExperienceComponent } from './workExperience/workExperience.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 
