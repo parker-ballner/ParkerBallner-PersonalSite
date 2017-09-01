@@ -7,7 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
+var aboutMe_component_1 = require("./aboutMe/aboutMe.component");
+var workExperience_component_1 = require("./workExperience/workExperience.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -15,8 +18,25 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [app_component_1.AppComponent],
+        imports: [
+            platform_browser_1.BrowserModule,
+            router_1.RouterModule.forRoot([
+                {
+                    path: '',
+                    redirectTo: '/aboutme',
+                    pathMatch: 'full'
+                },
+                {
+                    path: 'aboutme',
+                    component: aboutMe_component_1.AboutMeComponent
+                },
+                {
+                    path: 'workexperience',
+                    component: workExperience_component_1.WorkExperienceComponent
+                }
+            ])
+        ],
+        declarations: [app_component_1.AppComponent, aboutMe_component_1.AboutMeComponent, workExperience_component_1.WorkExperienceComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
