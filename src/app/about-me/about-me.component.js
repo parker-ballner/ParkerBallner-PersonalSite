@@ -14,9 +14,10 @@ var AboutMeComponent = (function () {
 AboutMeComponent = __decorate([
     core_1.Component({
         selector: 'about-me',
-        templateUrl: './aboutMe.component.html'
+        templateUrl: './about-me.component.html',
+        styleUrls: ['./about-me.component.styles.css']
     })
 ], AboutMeComponent);
 exports.AboutMeComponent = AboutMeComponent;
 ;
-//# sourceMappingURL=aboutMe.component.js.map
+//# sourceMappingURL=about-me.component.js.map

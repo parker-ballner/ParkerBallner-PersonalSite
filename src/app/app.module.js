@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var router_1 = require("@angular/router");
+var animations_1 = require("@angular/platform-browser/animations");
 var app_component_1 = require("./app.component");
-var aboutMe_component_1 = require("./aboutMe/aboutMe.component");
-var workExperience_component_1 = require("./workExperience/workExperience.component");
+var about_me_component_1 = require("./about-me/about-me.component");
+var work_experience_component_1 = require("./work-experience/work-experience.component");
 var projects_component_1 = require("./projects/projects.component");
 var contact_component_1 = require("./contact/contact.component");
 var AppModule = (function () {
@@ -22,6 +23,7 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [
             platform_browser_1.BrowserModule,
+            animations_1.BrowserAnimationsModule,
             router_1.RouterModule.forRoot([
                 {
                     path: '',
@@ -30,11 +32,11 @@ AppModule = __decorate([
                 },
                 {
                     path: 'aboutme',
-                    component: aboutMe_component_1.AboutMeComponent
+                    component: about_me_component_1.AboutMeComponent
                 },
                 {
                     path: 'workexperience',
-                    component: workExperience_component_1.WorkExperienceComponent
+                    component: work_experience_component_1.WorkExperienceComponent
                 },
                 {
                     path: 'projects',
@@ -46,7 +48,7 @@ AppModule = __decorate([
                 }
             ])
         ],
-        declarations: [app_component_1.AppComponent, aboutMe_component_1.AboutMeComponent, workExperience_component_1.WorkExperienceComponent, projects_component_1.ProjectsComponent, contact_component_1.ContactComponent],
+        declarations: [app_component_1.AppComponent, about_me_component_1.AboutMeComponent, work_experience_component_1.WorkExperienceComponent, projects_component_1.ProjectsComponent, contact_component_1.ContactComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

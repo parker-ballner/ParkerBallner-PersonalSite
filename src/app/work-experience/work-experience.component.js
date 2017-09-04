@@ -14,8 +14,8 @@ var WorkExperienceComponent = (function () {
 WorkExperienceComponent = __decorate([
     core_1.Component({
         selector: 'work-experience',
-        templateUrl: './workExperience.component.html'
+        templateUrl: './work-experience.component.html'
     })
 ], WorkExperienceComponent);
 exports.WorkExperienceComponent = WorkExperienceComponent;
-//# sourceMappingURL=workExperience.component.js.map
+//# sourceMappingURL=work-experience.component.js.map
