@@ -1,3 +1,8 @@
+.col, .col-3, .col-4, .col-6, .col-auto {
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+}
 img {
     max-height: 100%;
     max-width: 100%;
@@ -8,12 +13,7 @@ img {
     right: 0;
     bottom: 0;
 }
-.center-block {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-#infoBlock {
+#headingBlock {
     margin-bottom:30px;
 }
 #mainHeading {
@@ -50,8 +50,12 @@ img {
 #caption p {
     font-size: 1.25rem;
 }
-
-#academicsBlock {
+#infoBlock {
+    border: 5px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+#lastInfoBlock {
     border: 5px solid #ddd;
     border-radius: 4px;
 }
@@ -61,26 +65,32 @@ img {
 #rowOfInfo {
     text-align: left;
     max-height: 100%;
-    width: 100%;
     border-bottom: 5px solid #ddd;
-    margin: auto;
+    margin: 0 auto;
+    overflow-x: auto;
+    width: auto;
 }
 #lastRowOfInfo {
     text-align: left;
     max-height: 100%;
-    width: 100%;
-    margin: auto;
+    margin: 0 auto;
+    overflow-x: auto;
+    width: auto;
 }
 #thumbnail {
     max-width: 100px;
-    margin: 2% 2% 2% 2%;
-    float: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#thumbnail img{
+    max-width: 100px;
 }
 #content {
-    padding: 2%;
+    padding: 2% 2% 2% 2%;
     vertical-align: middle;
-    margin-left: 120px;
-    width: 100%;
+}
+#forceCenter {
+    display: table-cell;
 }
 #empSubText {
     font-size: 1.6rem;
@@ -94,7 +104,12 @@ img {
     text-align: center;
     padding: 5% 5% 7% 5%;
     font-weight: 400;
-    margin: 0 auto;
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 #grid img {
     max-height: 200px;
